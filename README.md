@@ -36,7 +36,7 @@ Example request using the Python [Requests library](http://docs.python-requests.
 import json
 import requests
 
-url = "http://localhost:8001/ent"
+url = "http://localhost:8001/annot"
 message_text = "La souris est mangée par le chat."
 headers = {'content-type': 'application/json'}
 d = {'text': message_text, 'model': 'fr'}
@@ -62,7 +62,7 @@ Example response:
 
 
 ```
-curl -s localhost:8001/ent -d '{"text":"La souris est mangée par le chat.", "model":"fr"}'
+curl -s localhost:8001/annot -d '{"text":"La souris est mangée par le chat.", "model":"fr"}'
 ```
 
 ```json
